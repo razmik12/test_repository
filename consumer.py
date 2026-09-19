@@ -5,7 +5,7 @@ import json
 async def income_message_consumer(message:AbstractIncomingMessage):
     async with message.process():
         get_message = json.loads(message.body)
-        print(get_message["name"],flush=True)
+        print(get_message["names"],flush=True)
         
     
 
